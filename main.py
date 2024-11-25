@@ -26,7 +26,7 @@ START_TEXT = """**{},
 
 ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 𝟷𝟶ᴍʙ.
 
-ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/CodeXBro'>ʀᴀʜᴜʟ</a>**"""
+ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/PRESIDENT7IND'>ʀᴀʜᴜʟ</a>**"""
 
 ABOUT_TEXT = """**{},
 
@@ -56,14 +56,14 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://youtube.com/@RahulReviews')
 	],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://telegram.me/CodeXSupport')
+        InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://telegram.me/EliteZone_Movies')
         ]]
     )
 
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🫡 ᴅᴏɴᴀᴛᴇ', url='https://codexbots.github.io/Donate'),
-        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ', url='https://telegram.me/CodexBro')
+        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ', url='https://telegram.me/PRESIDENT7IND')
 	],[
         InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='home')
         ]]
@@ -118,7 +118,7 @@ async def donation(bot, message):
     btn = [[
         InlineKeyboardButton(text="❌  ᴄʟᴏsᴇ  ❌", callback_data="close")
     ]]
-    yt=await message.reply_photo(photo='https://envs.sh/wam.jpg', caption=DONATE_TXT, reply_markup=InlineKeyboardMarkup(btn))
+    yt=await message.reply_photo(photo='https://envs.sh/Lqs.jpg', caption=DONATE_TXT, reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(300)
     await yt.delete()
     await message.delete()
@@ -161,7 +161,7 @@ async def upload(client, message):
             return
         except Exception as error:
             print(error)
-            await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ <a href='https://telegram.me/CodeXBro'>ᴄʀᴇᴀᴛᴏʀ</a>.</b>", disable_web_page_preview=True)
+            await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ <a href='https://telegram.me/PRESIDENT7IND'>ᴄʀᴇᴀᴛᴏʀ</a>.</b>", disable_web_page_preview=True)
             return
 
     file_size_limit = 10 * 1024 * 1024  # 10 MB in bytes
@@ -192,7 +192,7 @@ async def upload(client, message):
     await uploading_message.delete()
     codexbots=await message.reply_photo(
         photo=f'{image_url}',
-        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n𝑳𝒊𝒏𝒌 :-\n\n<code>{image_url}</code> \n\n<b>ʙʏ - <a href='https://telegram.me/CodeXBro'>ʀᴀʜᴜʟ</a></b>",
+        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n𝑳𝒊𝒏𝒌 :-\n\n<code>{image_url}</code> \n\n<b>ʙʏ - <a href='https://telegram.me/PRESIDENT7IND'>ʀᴀʜᴜʟ</a></b>",
         #disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(text="• ᴏᴘᴇɴ ʟɪɴᴋ •", url=image_url),
